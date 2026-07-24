@@ -1,0 +1,107 @@
+(footprint "XIAO_nRF52840"
+  (version 20241229)
+  (generator "kicad-mcp")
+  (generator_version "9.0")
+  (layer "F.Cu")
+  (descr "Seeed XIAO nRF52840 castellated carrier footprint (subset pads)")
+  (tags "XIAO nRF52840 module castellated")
+
+  (property "Reference" "REF**" (at 0 -1.27 0)
+    (layer "F.SilkS")
+    (uuid "da4bd5f1-6c6b-40c2-a571-7cc1874dbbf0")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Value" "XIAO_nRF52840" (at 0 1.27 0)
+    (layer "F.Fab")
+    (uuid "7a49f93a-0fbb-4591-b90d-578d6119debf")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Datasheet" "" (at 0 0 0)
+    (layer "F.Fab")
+    (uuid "a64230f8-e2b6-4f72-9c09-0af0f2661de9")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+
+  (fp_rect
+    (start -9 -8.5)
+    (end 9 8.5)
+    (stroke (width 0.05) (type default))
+    (fill none)
+    (layer "F.CrtYd")
+    (uuid "68beffde-0deb-4613-b239-53c50a2f8ff6")
+  )
+
+  (fp_rect
+    (start -8.75 -10.5)
+    (end 8.75 8)
+    (stroke (width 0.1) (type default))
+    (fill none)
+    (layer "F.Fab")
+    (uuid "674da852-f50c-4c70-908d-da72a269763c")
+  )
+
+  (pad "3V3" smd roundrect
+    (at -7.62 -3.81)
+    (size 1.6 1.2)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+    (roundrect_rratio 0.25)
+    (uuid "004964f4-1f65-4ff4-b55d-d23c3e9d78df")
+  )
+
+  (pad "GND" smd roundrect
+    (at -7.62 -1.27)
+    (size 1.6 1.2)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+    (roundrect_rratio 0.25)
+    (uuid "878ec61e-e70c-4db6-9c57-eacfb8045557")
+  )
+
+  (pad "BAT+" smd roundrect
+    (at -7.62 1.27)
+    (size 1.6 1.2)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+    (roundrect_rratio 0.25)
+    (uuid "b98d1092-cb8a-4ce1-99b0-2088a74ebc03")
+  )
+
+  (pad "BAT-" smd roundrect
+    (at -7.62 3.81)
+    (size 1.6 1.2)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+    (roundrect_rratio 0.25)
+    (uuid "ee73e54e-1fef-438d-9246-845c9a4f3004")
+  )
+
+  (pad "5V" smd roundrect
+    (at 7.62 -3.81)
+    (size 1.6 1.2)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+    (roundrect_rratio 0.25)
+    (uuid "735acd57-49eb-44ea-a792-a875863d7780")
+  )
+
+  (pad "D3" smd roundrect
+    (at 7.62 -1.27)
+    (size 1.6 1.2)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+    (roundrect_rratio 0.25)
+    (uuid "4b951dc9-d9af-470e-bb8e-c51ebdd84c47")
+  )
+
+  (pad "D4" smd roundrect
+    (at 7.62 1.27)
+    (size 1.6 1.2)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+    (roundrect_rratio 0.25)
+    (uuid "3486a400-d72f-464e-86d9-b3dd4eb2c82d")
+  )
+
+  (pad "D5" smd roundrect
+    (at 7.62 3.81)
+    (size 1.6 1.2)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+    (roundrect_rratio 0.25)
+    (uuid "cdbe35ca-0972-4808-9a98-d8bb94561cdd")
+  )
+
+)

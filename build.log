@@ -1,0 +1,6 @@
+[13:28:00] === Board-Bau gestartet: PulseWristTrack ===
+[13:28:03] Claude-MCP-Bau laeuft …
+[14:01:15] Bau fertig.
+[14:01:15] DRC-Gate: pruefe + behebe DRC-Fehler (routing-erhaltend) …
+[14:01:18] DRC-Gate: 17 Fehler -> routing-erhaltender Auto-Fix (Runde 1/2)
+[14:12:40] DRC-Gate: 16 Fehler -> routing-erhaltender Auto-Fix (Runde 2/2)

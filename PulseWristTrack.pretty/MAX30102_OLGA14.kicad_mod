@@ -1,0 +1,141 @@
+(footprint "MAX30102_OLGA14"
+  (version 20241229)
+  (generator "kicad-mcp")
+  (generator_version "9.0")
+  (layer "F.Cu")
+  (descr "MAX30102 14-OLGA optical sensor footprint")
+  (tags "MAX30102 OLGA sensor optical")
+
+  (property "Reference" "REF**" (at 0 -1.27 0)
+    (layer "F.SilkS")
+    (uuid "48a03274-e060-46eb-bd4a-edba3bb3e1a9")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Value" "MAX30102_OLGA14" (at 0 1.27 0)
+    (layer "F.Fab")
+    (uuid "64467a1e-d05c-4d3f-a176-6000fbbdd2b5")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Datasheet" "" (at 0 0 0)
+    (layer "F.Fab")
+    (uuid "02917018-300a-44de-b938-39cd39e492f4")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+
+  (fp_rect
+    (start -3 -1.9)
+    (end 3 1.9)
+    (stroke (width 0.05) (type default))
+    (fill none)
+    (layer "F.CrtYd")
+    (uuid "5bf6123d-2986-4ece-a6e3-e8292e158cfd")
+  )
+
+  (fp_rect
+    (start -2.8 -1.65)
+    (end 2.8 1.65)
+    (stroke (width 0.1) (type default))
+    (fill none)
+    (layer "F.Fab")
+    (uuid "ce80e429-f50f-4c51-acd4-5fd3baf34477")
+  )
+
+  (pad "1" smd rect
+    (at -2.4 -1)
+    (size 0.5 0.6)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+    (uuid "8d083bc6-0ada-406c-953e-08fb2d152c26")
+  )
+
+  (pad "2" smd rect
+    (at -1.6 -1)
+    (size 0.5 0.6)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+    (uuid "b52f4edf-7569-4a46-8ce8-6f1ca12fb765")
+  )
+
+  (pad "3" smd rect
+    (at -0.8 -1)
+    (size 0.5 0.6)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+    (uuid "c4d9a0ec-8f01-4c4e-bf0d-63eeea9e7a80")
+  )
+
+  (pad "4" smd rect
+    (at 0 -1)
+    (size 0.5 0.6)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+    (uuid "83897d26-6cce-4bc2-8c3f-888bdf41748b")
+  )
+
+  (pad "5" smd rect
+    (at 0.8 -1)
+    (size 0.5 0.6)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+    (uuid "30e85865-b41e-4982-ab2e-2bbaa7b3a4af")
+  )
+
+  (pad "6" smd rect
+    (at 1.6 -1)
+    (size 0.5 0.6)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+    (uuid "36b0ef7f-511d-41fe-b770-f96cc15cbbfd")
+  )
+
+  (pad "7" smd rect
+    (at 2.4 -1)
+    (size 0.5 0.6)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+    (uuid "84b3e7df-b9ae-4dcf-8a13-2e1e5a638048")
+  )
+
+  (pad "8" smd rect
+    (at 2.4 1)
+    (size 0.5 0.6)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+    (uuid "7e2867e6-c6ad-474b-836f-0e502e4a7acb")
+  )
+
+  (pad "9" smd rect
+    (at 1.6 1)
+    (size 0.5 0.6)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+    (uuid "bc0babb0-d8f5-4201-8a68-b3d179b29aa7")
+  )
+
+  (pad "10" smd rect
+    (at 0.8 1)
+    (size 0.5 0.6)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+    (uuid "a33c8731-08b2-4aed-8b7c-d52f3a2f0aa1")
+  )
+
+  (pad "11" smd rect
+    (at 0 1)
+    (size 0.5 0.6)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+    (uuid "bbe3281f-39cd-4ec2-b843-07793d2cf998")
+  )
+
+  (pad "12" smd rect
+    (at -0.8 1)
+    (size 0.5 0.6)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+    (uuid "d90bc9f7-debb-4ab1-a925-3d38dae67d1d")
+  )
+
+  (pad "13" smd rect
+    (at -1.6 1)
+    (size 0.5 0.6)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+    (uuid "8ac44cb8-375b-4d4c-85a7-41dfefd1e7a5")
+  )
+
+  (pad "14" smd rect
+    (at -2.4 1)
+    (size 0.5 0.6)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+    (uuid "9790de33-98d4-49df-a812-8e3581c0103d")
+  )
+
+)

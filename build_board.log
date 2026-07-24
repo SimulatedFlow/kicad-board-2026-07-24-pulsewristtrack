@@ -1,0 +1,12 @@
+Board complete and saved. Final summary:
+
+**PulseWristTrack — Aufbau abgeschlossen (Ordner `_BoardIdeas\2026-07-24-pulsewristtrack`)**
+
+1. **Gebaut:** Rundes Ø36 mm Wearable-Trägerboard für Seeed XIAO nRF52840 Sense + MAX30102. Schaltplan mit allen 16 Bauteilen und 11 Netzen (I²C-Pegelwandler Q1/Q2, 1,8 V-LDO U3, Pullups R1–R5, Stütz-Cs C1–C4, JST-Akku J1, Schalter SW1, 3× PWR_FLAG). XIAO-Symbol und XIAO- + MAX30102-Footprints als Custom-Teile erzeugt (fehlen in der Lib).
+2. **ALLE 16 Bauteile platziert** — verifiziert per `get_component_list`: keines am Ursprung, keine Stapel. Oberseite (F.Cu): U1 zentral, J1/SW1 unten; Unterseite (B.Cu): U2 exakt bei Zentrum (0,0), U3/Q1/Q2/R/C ringförmig. Sichtkontrolle per Render bestätigt Abstände.
+3. **4-Lagen-Stackup:** F.Cu(Signal)/In1.Cu(GND-Plane)/In2.Cu(+3V3-Plane)/B.Cu(Signal); Innenlagen als `power` getypt → Signale nur auf F/B, Planes sauber gefüllt. **Antennen-Keepout oben ist auf allen Lagen kupferfrei** (Plane-Outline als Band unter/über die Sperrzonen und beide Armband-Schlitze gelegt) — im Render verifiziert.
+4. **Mechanik:** Kreis-Umriss, 2 Armband-Schlitze, 2× M2-Bohrungen auf Edge.Cuts.
+5. **Routing:** `autoroute` (Freerouting) synchron gelaufen (~6 min), SES automatisch importiert; 0,4-mm-Bahnen auf F/B.Cu, GND/+3V3 über Planes+Vias.
+6. **DRC:** 1 Error (ein einzelner Sub-0,1-mm-`courtyards_overlap` zwischen zwei Passivbauteilen — auf dem dichten 36-mm-Layout irreduzibel, jeder Nudge verschiebt den Clip nur), **0 Shorts, 0 unconnected, 0 clearance**. Reststücke: 23 kosmetische Warnungen (Silk/Lib-Nags, 3 track_dangling). Board **gespeichert**.
+
+**Offene Punkte:** der 1 verbleibende Courtyard-Clip (DFM-akzeptabel); J1/SW1 leicht nach innen (y59.5) gesetzt, um den XIAO-Courtyard freizuhalten; In2 als einheitliche +3V3-Plane (1,8 V als normale Bahnen). Gerber/BOM/PDF wurden – wie beauftragt – nicht selbst exportiert.

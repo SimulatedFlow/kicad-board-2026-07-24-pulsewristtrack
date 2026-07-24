@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "PulseWristTrack")(type "KiCad")(uri "F:/KiCad Projects/BluepillBoards/_BoardIdeas/2026-07-24-pulsewristtrack/PulseWristTrack.kicad_sym")(options "")(descr ""))
+)

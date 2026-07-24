@@ -1,0 +1,9 @@
+{
+  "board_name": "PulseWristTrack",
+  "one_liner": "Ultrakompakte, runde Smartwatch-Trägerplatine für Seeed XIAO nRF52840 Sense und den optischen Sensor MAX30102 zur Erfassung von Gesten- und Vitaldaten.",
+  "market_gap": "Mangel an tragbaren, handgelenkstauglichen Trägerboards mit integrierter 6-Achsen-IMU und Haut-Kontaktsensorik, die ohne Kabelsalat direkt getragen werden können.",
+  "confidence": "high",
+  "price_eur": 24,
+  "target_enclosure": "3D-gedrucktes Rundgehäuse (38mm Durchmesser) mit integrierter 22mm Armband-Führung",
+  "injection_notes": "keine"
+}
