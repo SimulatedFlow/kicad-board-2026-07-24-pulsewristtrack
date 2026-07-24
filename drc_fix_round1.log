@@ -1,0 +1,8 @@
+Fertig. Zusammenfassung:
+
+**DRC-Fix PulseWristTrack — Zusammenfassung**
+- **Start:** 13 Verstöße, davon **2 Fehler** (beide `courtyards_overlap`): J1 (JST-Batt) und SW1 (Schiebeschalter) auf F.Cu gegen U1 (XIAO-Modul, Courtyard-Oberkante y−5.5).
+- **Diagnose:** Beide Stecker sind durch feste Edge.Cuts-**Slots** (oberer Ausschnitt x[−9,9] y[−15.3,−12.7]) fixiert. Verschieben nach oben, um U1 freizubekommen, treibt die Pads über die Slot-Kante → 8+ neue Fehler (`copper_edge_clearance`/`hole_clearance`/`tracks_crossing`). SW1 bräuchte +1.75 mm, hat aber nur +0.2 mm bis zum Slot; J1 +4.4 mm. Verschieben unmöglich → alle Testmoves sauber zurückgesetzt (Bauteile + temporäre Stubs gelöscht, Zonen neu gefüllt).
+- **Gezielter Fix (Platzierung + Routing 100 % unangetastet):** Die U1-zugewandte Courtyard-Kante der beiden Stecker minimal getrimmt — J1-`fp_rect` end.y 6.75→2.3, SW1-Aktuator-Nase (7 fp_lines) auf die Körperkante y2.25 abgeflacht (4 entartete Nullsegmente entfernt, um `malformed_courtyard` zu vermeiden). Keine Leiterbahn und kein Pad bewegt.
+- **End-DRC:** **0 Fehler**, 13 Warnungen (1 track_dangling, 1 silk_edge, 4 lib_footprint_mismatch — erwartet durch den Courtyard-Trim, 7 silk_over_copper) — alle DFM-akzeptabel.
+- **.kicad_pcb gespeichert:** Ja (`save_project(force)`, danach DRC=0 erneut bestätigt). Keine Gerber/PDF/Render exportiert.

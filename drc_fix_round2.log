@@ -1,0 +1,10 @@
+## Zusammenfassung
+
+- **Start-DRC:** `run_drc` (die maßgebliche Prüfung) meldete **0 Fehler (severity error)**, 13 Warnungen. Es gab also von Anfang an keine Error-Verstöße zu beheben.
+- **Board-Datei war bereits fertig gefixt:** Platzierung und Routing der `PulseWristTrack.kicad_pcb` waren vollständig vorhanden; die Datei entspricht exakt dem in meinem Gedächtnis dokumentierten End-Zustand einer früheren Session (Fehler bereits auf 0 gebracht).
+- **Keine Bauteile/Tracks geändert:** Bewusst nichts verschoben, keinen Track neu gezogen und nichts gelöscht — jede Änderung hätte nur das erhaltene manuelle Routing gefährdet und wäre gegen die Vorgabe „Platzierung/Routing so weit wie möglich erhalten“ gewesen.
+- **`check_courtyard_overlaps` meldete 26 „Überlappungen“** — das ist das bekannte Over-Reporting dieses Tools (aufgeblähte Courtyards durch Silk-Referenztext; `MountingHole_2.1mm` als ~20 mm-Bbox, Bboxen reichen bis x=±22 außerhalb des 18-mm-Boards). Keine davon ist ein echter DRC-Fehler; `run_drc` erkennt reale Courtyard-Overlaps (hatte auf genau diesem Board früher 2 solche Errors gemeldet) und zeigt jetzt **0**.
+- **End-DRC:** unverändert **0 Fehler**, 13 Warnungen (1 track_dangling, 1 silk_edge_clearance, 4 lib_footprint_mismatch, 7 silk_over_copper) — alle DFM-akzeptabel.
+- **`.kicad_pcb` gespeichert:** Ja — mit `save_project(force:true)` auf Platte geschrieben; Nachprüfung per erneutem `run_drc` bestätigt 0 Fehler. Gerber/PDF/Render habe ich nicht exportiert.
+
+Ziel (0 Fehler) ist erreicht; die Datei liegt gespeichert im Projektordner.

@@ -3,3 +3,10 @@
 [19:15:17] Bau fertig.
 [19:15:17] DRC-Gate: pruefe + behebe DRC-Fehler (routing-erhaltend) …
 [19:15:22] DRC-Gate: 4 Fehler -> routing-erhaltender Auto-Fix (Runde 1/2)
+[19:33:12] DRC-Gate: 2 Fehler -> routing-erhaltender Auto-Fix (Runde 2/2)
+[19:35:52] DRC-Gate Ende: 2 Fehler nach 2 Fix-Runde(n)
+[19:35:52] DRC-GATE NICHT bestanden (drc_left=2) → KEIN Fertigungspaket, kein BUILT-Marker. Board muss erst DRC-sauber sein.
+[19:35:56] === Board-Bau abgeschlossen ===
+[19:37:50] === Finish-2 (letzte unconnected): Start=2 ===
+[19:44:11] === Finish-2 Ende: unconnected 2 -> 0 ===
+[19:44:15] DRC sauber -> Deliverables: PCBWay-ZIP (28 Gerber/Bohr-Dateien), Schaltplan-PDF, BOM-CSV, Render-top, Render-bottom, eBay-Text

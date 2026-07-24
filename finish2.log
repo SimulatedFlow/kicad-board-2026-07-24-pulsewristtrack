@@ -1,0 +1,8 @@
+Erledigt.
+
+**Zusammenfassung**
+- Die 2 losen Ratsnest lagen an den **oberen Pads von U2 (MAX30102)**: Pad 11 **GND** @(0,1) und Pad 10 **+3V3** @(−0.8,1). Die unteren Gegenpads (Pad 4 GND, Pad 5 +3V3) hingen bereits über die vorhandenen Brücken-Vias an ihren Planes.
+- Verbindung a) **GND**: eine Via vom Pad 11 in die **In1.Cu-GND-Plane**. b) **+3V3**: eine Via vom Pad 10 in die **In2.Cu-+3V3-Plane** — genau der Plane-Via-Weg laut Aufgabe, keine Tracks nötig.
+- Erste 0.6-mm-GND-Via kollidierte mit einer INT-Trace (0.05 mm) → auf **0.4-mm-Via** verkleinert und minimal nach links (−0.1,1) versetzt; jetzt 0.25 mm Abstand zu INT-Trace und Pad 10. Kein Track/Via im Antennen-Keepout (beide Vias bei y=+1, unten).
+- `refill_zones` ok (2 Zonen), Vias sitzen eingebettet im Plane-Kupfer (visuell bestätigt, Keepout oben kupferfrei).
+- **End-DRC: 0 Fehler**, 13 Warnungen (unverändertes Ausgangsniveau: 1 track_dangling, 1 silk_edge, 4 lib_footprint_mismatch, 7 silk_over_copper). Board mit `save_project(force:true)` **gespeichert**. Kein Gerber/BOM-Export.
