@@ -1,0 +1,11 @@
+Fertig. Zusammenfassung:
+
+## Zusammenfassung PulseWristTrack – DRC-Bereinigung
+
+- **Start-DRC:** 23 Verstöße, davon **0 severity-error**, 23 Warnungen (3 track_dangling, 1 isolated_copper, 12 silk_edge, 2 lib_footprint, 5 silk_over_copper). Das Board erfüllte das 0-Fehler-Ziel bereits, hatte aber echte Dangling-Defekte.
+- **Behoben:** die 3 `track_dangling` — es waren redundante Via-Drop-Stubs an zwei F/B-Via-Übergängen (INT-Via @55.6441/50.9766 und SDA_1V8-Via @55.7613/56.7471). Freerouting hatte kurze Sackgassen-Segmente auf beiden Lagen hinterlassen; die echte Verbindung läuft über die Vias. Gezielt **6 Stub-Segmente per `delete_trace` (UUID, einzeln) entfernt** — keine anderen Tracks/Bauteile angefasst, keine Neuverdrahtung.
+- **Nicht angefasst:** Platzierung und Routing komplett erhalten; kein rip-up, kein autoroute, kein suggest_placement.
+- **Zwischenfall:** `query_zones` crashte den swig-Python-Worker (kein Respawn im MCP-Server) → per Neustart des Node-MCP-Servers (Kind von claude.exe) wiederhergestellt; die Harness-Prozesse blieben unangetastet.
+- **1 `isolated_copper`-Warnung bewusst belassen** — nur über die crash-anfälligen Zonen-Tools behebbar, und Warnungen sind laut Aufgabe akzeptabel (Risiko/Nutzen).
+- **End-DRC:** 20 Verstöße, **0 Fehler (Ziel erreicht)**, 20 Warnungen (1 isolated_copper, 12 silk_edge, 2 lib_footprint, 5 silk_over_copper).
+- **.kicad_pcb gespeichert:** ✅ ja (auf Platte verifiziert; frisch geöffnet + DRC bestätigt den Stand). Kein Gerber/PDF/Render exportiert.

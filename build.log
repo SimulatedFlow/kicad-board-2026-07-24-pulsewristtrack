@@ -4,3 +4,8 @@
 [14:01:15] DRC-Gate: pruefe + behebe DRC-Fehler (routing-erhaltend) …
 [14:01:18] DRC-Gate: 17 Fehler -> routing-erhaltender Auto-Fix (Runde 1/2)
 [14:12:40] DRC-Gate: 16 Fehler -> routing-erhaltender Auto-Fix (Runde 2/2)
+[14:27:11] DRC-Gate Ende: 16 Fehler nach 2 Fix-Runde(n)
+[14:27:11] DRC-GATE NICHT bestanden (drc_left=16) → KEIN Fertigungspaket, kein BUILT-Marker. Board muss erst DRC-sauber sein.
+[14:27:13] === Board-Bau abgeschlossen ===
+[14:31:25] === Routing-Completion (custom): Start unconnected=16 ===
+[14:33:50] === Routing-Completion Ende: unconnected 16 -> 16 ===
