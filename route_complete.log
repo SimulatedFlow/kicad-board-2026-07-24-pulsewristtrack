@@ -1,8 +1,0 @@
-## Zusammenfassung
-
-- **Start-unconnected:** Beim Öffnen zeigte `drc` bereits **0 unconnected / 0 errors** — die Datei in `_BoardIdeas\2026-07-24-pulsewristtrack` ist die bereits fertig geroutete Version dieses Boards (deckt sich exakt mit dem in meinem Memory dokumentierten Endstand). Die Prämisse „16 unconnected" traf auf den Datei-Stand auf Platte nicht zu.
-- **Geprüfte Netze/Routing:** Alle Signale (I2C SDA/SCL über Q1/Q2, INT, BAT_SW J1→SW1→XIAO, 1.8V U3→U2, 3.3V) liegen fertig auf **F.Cu + B.Cu** mit Layer-Wechsel-Vias; `query_traces` auf In1.Cu/In2.Cu liefert **0 Signal-Traces** (Planes sauber).
-- **Strom/Masse:** **In1.Cu = durchgehende GND-Plane**, **In2.Cu = Power-Plane (+3V3)** — beide via Render bestätigt vorhanden und gefüllt, Bauteile über Plane-Pins angebunden.
-- **Antennen-Keepout:** Auf **allen** Lagen eingehalten — beide Planes enden an einer Ober-Chord deutlich unter dem oberen Slot, und F.Cu/B.Cu haben im oberen Antennenstreifen **kein Kupfer** (visuell in 3 gefilterten `get_board_2d_view`-Renders verifiziert).
-- **End-unconnected:** **0** (Ziel erreicht), 0 severity-error. Verbleiben nur 20 kosmetische Warnungen (1 isolated_copper, 12 silk_edge_clearance, 2 lib_footprint, 5 silk_over_copper) — alle DFM-akzeptabel.
-- **.kicad_pcb gespeichert:** **Ja** (`save_project force=true` erfolgreich); Post-Save-DRC unverändert 0 error/0 unconnected. Es wurden keinerlei Tracks/Umriss/Platzierung verändert — bestehendes korrektes Routing 100 % erhalten.

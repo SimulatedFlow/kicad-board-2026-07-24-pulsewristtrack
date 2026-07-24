@@ -17,8 +17,9 @@ Dieses Board ist ein **rundes Wearable** mit HF-Modul. Platzierung ist funktions
 3. **MAX30102 (U2) exakt zentriert bei X=0,Y=0 auf der UNTERSEITE (B.Cu)** — Hautkontakt. Nicht in eine Reihe schieben.
 4. Bauteile sind bewusst auf **Oberseite (F.Cu)** und **Unterseite (B.Cu)** aufgeteilt (siehe Liste) — diese Seiten-Zuordnung beibehalten.
 5. Die GND-/Power-Planes (In1/In2) müssen den Antennen-Keepout **aussparen**.
+6. **PLANE-VIAS (kritisch — das war der Fehler im ersten Bau!):** Dies ist ein **SMD-Board**. SMD-Pads liegen nur auf einer Außenlage und verbinden sich NICHT automatisch mit den Innen-Planes. Setze **VOR dem Signal-Routing neben JEDES GND-Pad ein Via zur GND-Plane (In1.Cu)** und **neben JEDES +3V3-Pad ein Via zur +3V3-Plane (In2.Cu)**. Erst danach `drc` prüfen (es dürfen KEINE GND/+3V3-Pads mehr „unconnected" sein), dann nur noch die wenigen Signale (I2C SDA/SCL, INT, BAT_SW, 1.8V) auf F.Cu/B.Cu routen. So bleiben nur ~6–8 Signal-Netze für den Autorouter → er schafft es sicher.
 
-Nur 16 Bauteile → nach korrekter Platzierung gut autoroutbar (Signale F/B, Planes innen).
+Nur 16 Bauteile → nach korrekter Platzierung + Plane-Vias gut autoroutbar (nur Signale auf F/B, GND/+3V3 über Planes).
 
 ## BUILD-PROMPT
 

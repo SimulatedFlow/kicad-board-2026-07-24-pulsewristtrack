@@ -1,26 +1,129 @@
 {
   "board": "F:\\KiCad Projects\\BluepillBoards\\_BoardIdeas\\2026-07-24-pulsewristtrack\\PulseWristTrack.kicad_pcb",
-  "timestamp": "2026-07-24T14:33:32",
-  "total_violations": 20,
+  "timestamp": "2026-07-24T19:22:43",
+  "total_violations": 24,
   "violation_counts": {
-    "isolated_copper": 1,
-    "silk_edge_clearance": 12,
+    "tracks_crossing": 1,
+    "hole_clearance": 1,
+    "copper_edge_clearance": 8,
+    "track_dangling": 1,
+    "silk_edge_clearance": 5,
     "lib_footprint_mismatch": 2,
-    "silk_over_copper": 5
+    "silk_over_copper": 6
   },
   "severity_counts": {
-    "error": 0,
-    "warning": 20,
+    "error": 10,
+    "warning": 14,
     "info": 0
   },
   "violations": [
     {
-      "type": "isolated_copper",
-      "severity": "warning",
-      "message": "Isolated copper fill",
+      "type": "tracks_crossing",
+      "severity": "error",
+      "message": "Tracks crossing",
       "location": {
-        "x": 35.76,
-        "y": 40.0,
+        "x": -8.0,
+        "y": -12.4,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "hole_clearance",
+      "severity": "error",
+      "message": "Loch-Freiraum-Versto\u00df (Einschr\u00e4nkungen aus Platinenkonfiguration zu L\u00f6chern Freiraum 0,2500 mm; tats\u00e4chlich 0,1000 mm)",
+      "location": {
+        "x": 5.5,
+        "y": -10.75,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "copper_edge_clearance",
+      "severity": "error",
+      "message": "Platinenkanten-Freiraum-Versto\u00df (Einschr\u00e4nkungen aus Platinenkonfiguration zum Rand Freiraum 0,5000 mm; tats\u00e4chlich 0,1000 mm)",
+      "location": {
+        "x": 9.0,
+        "y": -12.7,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "copper_edge_clearance",
+      "severity": "error",
+      "message": "Platinenkanten-Freiraum-Versto\u00df (Einschr\u00e4nkungen aus Platinenkonfiguration zum Rand Freiraum 0,5000 mm; tats\u00e4chlich 0,0000 mm)",
+      "location": {
+        "x": 9.0,
+        "y": -12.7,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "copper_edge_clearance",
+      "severity": "error",
+      "message": "Platinenkanten-Freiraum-Versto\u00df (Einschr\u00e4nkungen aus Platinenkonfiguration zum Rand Freiraum 0,5000 mm; tats\u00e4chlich 0,0000 mm)",
+      "location": {
+        "x": 9.0,
+        "y": -12.7,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "copper_edge_clearance",
+      "severity": "error",
+      "message": "Platinenkanten-Freiraum-Versto\u00df (Einschr\u00e4nkungen aus Platinenkonfiguration zum Rand Freiraum 0,5000 mm; tats\u00e4chlich 0,4000 mm)",
+      "location": {
+        "x": -9.0,
+        "y": -12.7,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "copper_edge_clearance",
+      "severity": "error",
+      "message": "Platinenkanten-Freiraum-Versto\u00df (Einschr\u00e4nkungen aus Platinenkonfiguration zum Rand Freiraum 0,5000 mm; tats\u00e4chlich 0,0000 mm)",
+      "location": {
+        "x": 9.0,
+        "y": -12.7,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "copper_edge_clearance",
+      "severity": "error",
+      "message": "Platinenkanten-Freiraum-Versto\u00df (Einschr\u00e4nkungen aus Platinenkonfiguration zum Rand Freiraum 0,5000 mm; tats\u00e4chlich 0,0000 mm)",
+      "location": {
+        "x": 9.0,
+        "y": -12.7,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "copper_edge_clearance",
+      "severity": "error",
+      "message": "Platinenkanten-Freiraum-Versto\u00df (Einschr\u00e4nkungen aus Platinenkonfiguration zum Rand Freiraum 0,5000 mm; tats\u00e4chlich 0,3750 mm)",
+      "location": {
+        "x": 9.0,
+        "y": -15.3,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "copper_edge_clearance",
+      "severity": "error",
+      "message": "Platinenkanten-Freiraum-Versto\u00df (Einschr\u00e4nkungen aus Platinenkonfiguration zum Rand Freiraum 0,5000 mm; tats\u00e4chlich 0,0000 mm)",
+      "location": {
+        "x": 0.0,
+        "y": 0.0,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "track_dangling",
+      "severity": "warning",
+      "message": "Track has unconnected end",
+      "location": {
+        "x": -5.4984,
+        "y": 5.6061,
         "unit": "mm"
       }
     },
@@ -29,8 +132,8 @@
       "severity": "warning",
       "message": "Silkscreen clipped by board edge",
       "location": {
-        "x": 50.0,
-        "y": 50.0,
+        "x": -9.0,
+        "y": -15.3,
         "unit": "mm"
       }
     },
@@ -39,8 +142,8 @@
       "severity": "warning",
       "message": "Silkscreen clipped by board edge",
       "location": {
-        "x": 50.0,
-        "y": 50.0,
+        "x": 9.0,
+        "y": -12.7,
         "unit": "mm"
       }
     },
@@ -49,8 +152,8 @@
       "severity": "warning",
       "message": "Silkscreen clipped by board edge",
       "location": {
-        "x": 59.0,
-        "y": 65.3,
+        "x": 9.0,
+        "y": -12.7,
         "unit": "mm"
       }
     },
@@ -59,8 +162,8 @@
       "severity": "warning",
       "message": "Silkscreen clipped by board edge",
       "location": {
-        "x": 59.0,
-        "y": 65.3,
+        "x": 9.0,
+        "y": -12.7,
         "unit": "mm"
       }
     },
@@ -69,78 +172,8 @@
       "severity": "warning",
       "message": "Silkscreen clipped by board edge",
       "location": {
-        "x": 41.0,
-        "y": 62.7,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "silk_edge_clearance",
-      "severity": "warning",
-      "message": "Silkscreen clipped by board edge",
-      "location": {
-        "x": 41.0,
-        "y": 62.7,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "silk_edge_clearance",
-      "severity": "warning",
-      "message": "Silkscreen clipped by board edge",
-      "location": {
-        "x": 41.0,
-        "y": 62.7,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "silk_edge_clearance",
-      "severity": "warning",
-      "message": "Silkscreen clipped by board edge",
-      "location": {
-        "x": 41.0,
-        "y": 62.7,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "silk_edge_clearance",
-      "severity": "warning",
-      "message": "Silkscreen clipped by board edge",
-      "location": {
-        "x": 41.0,
-        "y": 62.7,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "silk_edge_clearance",
-      "severity": "warning",
-      "message": "Silkscreen clipped by board edge",
-      "location": {
-        "x": 41.0,
-        "y": 62.7,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "silk_edge_clearance",
-      "severity": "warning",
-      "message": "Silkscreen clipped by board edge",
-      "location": {
-        "x": 41.0,
-        "y": 62.7,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "silk_edge_clearance",
-      "severity": "warning",
-      "message": "Silkscreen clipped by board edge",
-      "location": {
-        "x": 41.0,
-        "y": 62.7,
+        "x": -9.0,
+        "y": -15.3,
         "unit": "mm"
       }
     },
@@ -149,8 +182,8 @@
       "severity": "warning",
       "message": "Footprint \"MountingHole_2.1mm\" stimmt nicht mit Kopie in Bibliothek \"MountingHole\" \u00fcberein.",
       "location": {
-        "x": 62.0,
-        "y": 50.0,
+        "x": 12.0,
+        "y": 0.0,
         "unit": "mm"
       }
     },
@@ -159,8 +192,8 @@
       "severity": "warning",
       "message": "Footprint \"MountingHole_2.1mm\" stimmt nicht mit Kopie in Bibliothek \"MountingHole\" \u00fcberein.",
       "location": {
-        "x": 38.0,
-        "y": 50.0,
+        "x": -12.0,
+        "y": 0.0,
         "unit": "mm"
       }
     },
@@ -169,8 +202,8 @@
       "severity": "warning",
       "message": "Silkscreen clipped by solder mask",
       "location": {
-        "x": 62.0,
-        "y": 50.0,
+        "x": 12.0,
+        "y": 0.0,
         "unit": "mm"
       }
     },
@@ -179,8 +212,8 @@
       "severity": "warning",
       "message": "Silkscreen clipped by solder mask",
       "location": {
-        "x": 38.0,
-        "y": 50.0,
+        "x": -12.0,
+        "y": 0.0,
         "unit": "mm"
       }
     },
@@ -189,8 +222,8 @@
       "severity": "warning",
       "message": "Silkscreen clipped by solder mask",
       "location": {
-        "x": 50.0,
-        "y": 48.73,
+        "x": 0.0,
+        "y": -1.27,
         "unit": "mm"
       }
     },
@@ -199,8 +232,8 @@
       "severity": "warning",
       "message": "Silkscreen clipped by solder mask",
       "location": {
-        "x": 50.0,
-        "y": 48.73,
+        "x": 0.0,
+        "y": -1.27,
         "unit": "mm"
       }
     },
@@ -209,8 +242,18 @@
       "severity": "warning",
       "message": "Silkscreen clipped by solder mask",
       "location": {
-        "x": 50.0,
-        "y": 48.73,
+        "x": 0.0,
+        "y": -1.27,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "silk_over_copper",
+      "severity": "warning",
+      "message": "Silkscreen clipped by solder mask",
+      "location": {
+        "x": 10.68,
+        "y": -2.0,
         "unit": "mm"
       }
     }

@@ -1,12 +1,19 @@
-Board complete and saved. Final summary:
+Build abgeschlossen. Zusammenfassung:
 
-**PulseWristTrack — Aufbau abgeschlossen (Ordner `_BoardIdeas\2026-07-24-pulsewristtrack`)**
+**Gebaut:** 4-lagiges rundes Wearable-Trägerboard **PulseWristTrack** (Ø36 mm) für Seeed XIAO nRF52840 Sense + MAX30102, in `_BoardIdeas\2026-07-24-pulsewristtrack`. Frischer Aufbau; die vorhandenen Projekt-Libs (`.kicad_sym`, `.pretty` mit XIAO- und MAX30102-Footprint) wurden wiederverwendet, das fehlende MAX30102-Symbol neu erzeugt (Pins 1–14 = OLGA-Pads).
 
-1. **Gebaut:** Rundes Ø36 mm Wearable-Trägerboard für Seeed XIAO nRF52840 Sense + MAX30102. Schaltplan mit allen 16 Bauteilen und 11 Netzen (I²C-Pegelwandler Q1/Q2, 1,8 V-LDO U3, Pullups R1–R5, Stütz-Cs C1–C4, JST-Akku J1, Schalter SW1, 3× PWR_FLAG). XIAO-Symbol und XIAO- + MAX30102-Footprints als Custom-Teile erzeugt (fehlen in der Lib).
-2. **ALLE 16 Bauteile platziert** — verifiziert per `get_component_list`: keines am Ursprung, keine Stapel. Oberseite (F.Cu): U1 zentral, J1/SW1 unten; Unterseite (B.Cu): U2 exakt bei Zentrum (0,0), U3/Q1/Q2/R/C ringförmig. Sichtkontrolle per Render bestätigt Abstände.
-3. **4-Lagen-Stackup:** F.Cu(Signal)/In1.Cu(GND-Plane)/In2.Cu(+3V3-Plane)/B.Cu(Signal); Innenlagen als `power` getypt → Signale nur auf F/B, Planes sauber gefüllt. **Antennen-Keepout oben ist auf allen Lagen kupferfrei** (Plane-Outline als Band unter/über die Sperrzonen und beide Armband-Schlitze gelegt) — im Render verifiziert.
-4. **Mechanik:** Kreis-Umriss, 2 Armband-Schlitze, 2× M2-Bohrungen auf Edge.Cuts.
-5. **Routing:** `autoroute` (Freerouting) synchron gelaufen (~6 min), SES automatisch importiert; 0,4-mm-Bahnen auf F/B.Cu, GND/+3V3 über Planes+Vias.
-6. **DRC:** 1 Error (ein einzelner Sub-0,1-mm-`courtyards_overlap` zwischen zwei Passivbauteilen — auf dem dichten 36-mm-Layout irreduzibel, jeder Nudge verschiebt den Clip nur), **0 Shorts, 0 unconnected, 0 clearance**. Reststücke: 23 kosmetische Warnungen (Silk/Lib-Nags, 3 track_dangling). Board **gespeichert**.
+**Schaltplan/Netze:** Alle **16 Bauteile** (U1–U3, J1, SW1, Q1/Q2, C1–C4, R1–R5) mit vollständiger Netzliste (I2C-Pegelwandlung 1V8↔3V3 über Q1/Q2, LDO 3V3→1V8, INT, BAT-Pfad über SW1) via `batch_add_and_connect` + `sync_schematic_to_board` (50 Pads).
 
-**Offene Punkte:** der 1 verbleibende Courtyard-Clip (DFM-akzeptabel); J1/SW1 leicht nach innen (y59.5) gesetzt, um den XIAO-Courtyard freizuhalten; In2 als einheitliche +3V3-Plane (1,8 V als normale Bahnen). Gerber/BOM/PDF wurden – wie beauftragt – nicht selbst exportiert.
+**Board:** Kreisumriss Ø36 + 2 Armband-Schlitze + 2× M2. 4-Lagen-Stackup **F.Cu / In1.Cu(GND-Plane) / In2.Cu(+3V3-Plane) / B.Cu** (Innenlagen auf `power` gesetzt → Router bleibt auf F/B). Beide Planes als Achteck-Pour, oben **unter dem Antennen-Keepout gekappt** (Top-Streifen kupferfrei, per Render bestätigt). U1/J1/SW1 oben, Sensor/Regler/Passive unten – exakte Vorgabe-Koordinaten.
+
+**Plane-Anbindung:** 17 manuelle Vias an alle gut erreichbaren GND/+3V3-SMD-Pads (dichte MAX30102-Reihe: je 1 Via zwischen gleichnetzigen Pads); THT-GND (JST) verbindet selbst. Ein Kurzschluss (Via unter U1-Pad) durch Umsetzen von R1/R4 behoben.
+
+**Platzierung:** ALLE 16 Bauteile platziert – manuell auf die Pflicht-Koordinaten (board-spezifischer Prompt überschreibt `suggest_placement`, das hier laut Vorgabe falsch wäre). Sichtkontrolle per `get_board_2d_view` durchgeführt, Ausreißer gezielt korrigiert.
+
+**Routing:** Ausschließlich MCP-`autoroute` (Freerouting), auf Java-Ende gewartet → **92 Traces**, nur auf F/B.Cu, 0 auf den Planes; alle Signal-/1V8-/BAT-Netze verlegt.
+
+**DRC-Status:** **2 Fehler** – beide `courtyards_overlap` (J1/SW1 vs. U1). Diese sind **spec-inhärent**: das 18×21 mm-XIAO-Modul auf Ø36 lässt keinen kollisionsfreien Platz für die Randstecker, die Prompt-Koordinaten erzwingen das. **0 Shorts, 0 Clearance, 0 unconnected.** Restliche 11 Warnungen kosmetisch (Silk, Mounting-Hole-Lib).
+
+**Gespeichert:** ja – geroutete `.kicad_pcb` ist auf Platte. Gerber/BOM/PDF laufen laut Vorgabe automatisch danach.
+
+**Offene Punkte:** Die 2 Courtyard-Overlaps bleiben (nicht ohne Verletzung der vorgegebenen Positionen auflösbar); 1 `track_dangling`-Warnung (harmloser Via-Stub) wurde belassen, um die absturzgefährdeten Zonen-Tools nicht erneut zu triggern.

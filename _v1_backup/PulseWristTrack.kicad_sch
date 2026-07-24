@@ -2,7 +2,7 @@
 	(version 20260101)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid 259a0946-9565-45ac-89f7-5fc0b32d0157)
+	(uuid 2be9c7da-899d-4748-a50d-861159b715fe)
 	(paper "A4")
 	(lib_symbols
 		(symbol "PulseWristTrack:XIAO_nRF52840_Sense"
@@ -208,6 +208,872 @@
 								(size 1.27 1.27)
 							)
 						)
+					)
+				)
+			)
+		)
+		(symbol "Sensor:MAX30102"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 7.62 15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MAX30102"
+				(at 7.62 12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "OptoDevice:Maxim_OLGA-14_3.3x5.6mm_P0.8mm"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/MAX30102.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Heart Rate Sensor, 14-OLGA"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Heart Rate"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Maxim*OLGA*3.3x5.6mm*P0.8mm*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MAX30102_0_1"
+				(rectangle
+					(start -7.62 10.16)
+					(end 7.62 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "MAX30102_1_1"
+				(pin no_connect line
+					(at -7.62 5.08 0)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -12.7 90)
+					(length 2.54)
+					(name "PGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 7.62 -7.62 180)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 7.62 -5.08 180)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 7.62 5.08 180)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 12.7 270)
+					(length 2.54)
+					(name "VLED+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 12.7 270)
+					(length 2.54)
+					(hide yes)
+					(name "VLED+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 12.7 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 -12.7 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "~{INT}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Regulator_Linear:AP2112K-1.8"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -5.08 5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "AP2112K-1.8"
+				(at 0 5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+				(at 0 8.255 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2112.pdf"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "600mA low dropout linear regulator, with enable pin, 2.5V-6V input voltage range, 1.8V fixed positive output, SOT-23-5"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "linear regulator ldo fixed positive"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23?5*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "AP2112K-1.8_0_1"
+				(rectangle
+					(start -5.08 4.445)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "AP2112K-1.8_1_1"
+				(pin power_in line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 5.08 0 180)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Transistor_FET:BSS138"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "BSS138"
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 5.08 -1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF"
+				(at 5.08 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Description" "50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "N-Channel MOSFET"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "BSS138_0_1"
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.921 0.381) (xy 3.683 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "BSS138_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
 				)
 			)
@@ -560,830 +1426,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:AP2112K-1.8"
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at -5.08 5.715 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "AP2112K-1.8"
-				(at 0 5.715 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-				(at 0 8.255 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2112.pdf"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "600mA low dropout linear regulator, with enable pin, 2.5V-6V input voltage range, 1.8V fixed positive output, SOT-23-5"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "linear regulator ldo fixed positive"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "SOT?23?5*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "AP2112K-1.8_0_1"
-				(rectangle
-					(start -5.08 4.445)
-					(end 5.08 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "AP2112K-1.8_1_1"
-				(pin power_in line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "EN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 5.08 0 180)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 7.62 2.54 180)
-					(length 2.54)
-					(name "VOUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "PulseWristTrack:MAX30102"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 2.54 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "MAX30102"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "PulseWristTrack:MAX30102_OLGA14"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-				(hide yes)
-			)
-			(property "Datasheet" "~"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-				(hide yes)
-			)
-			(property "Description" "MAX30102 optical pulse oximeter / HR sensor (OLGA-14), pins numbered to match footprint pads"
-				(at 0 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-				(hide yes)
-			)
-			(symbol "MAX30102_0_1"
-				(rectangle
-					(start -5.08 -7.62)
-					(end 5.08 7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "MAX30102_1_1"
-				(pin input line
-					(at -7.62 5.08 0)
-					(length 2.54)
-					(name "SCL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "SDA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "PGND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "NC4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -7.62 -5.08 0)
-					(length 2.54)
-					(name "VLED1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 7.62 5.08 180)
-					(length 2.54)
-					(name "VLED2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 7.62 2.54 180)
-					(length 2.54)
-					(name "NC7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "NC8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 7.62 -2.54 180)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 7.62 -5.08 180)
-					(length 2.54)
-					(name "NC10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 -10.16 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 0 -10.16 90)
-					(length 2.54)
-					(name "INT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 2.54 -10.16 90)
-					(length 2.54)
-					(name "NC13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 5.08 -10.16 90)
-					(length 2.54)
-					(name "NC14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Transistor_FET:BSS138"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Q"
-				(at 5.08 1.905 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "BSS138"
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-				(at 5.08 -1.905 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(justify left)
-				)
-			)
-			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF"
-				(at 5.08 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Description" "50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "N-Channel MOSFET"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "BSS138_0_1"
-				(polyline
-					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.921 0.381) (xy 3.683 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "BSS138_1_1"
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-			(property "ki_fp_filters" "SOT?23*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -1679,10 +1721,125 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(symbol
 		(lib_id "PulseWristTrack:XIAO_nRF52840_Sense")
-		(at 100.33 49.53 0)
+		(at 69.85 69.85 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1690,9 +1847,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "15b6adce-f476-4473-839a-133188eb8e4a")
+		(uuid "fee209e7-004e-407a-ae13-57ddf19d1689")
 		(property "Reference" "U1"
-			(at 100.33 41.91 0)
+			(at 69.85 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1701,8 +1858,8 @@
 				)
 			)
 		)
-		(property "Value" "XIAO_nRF52840_Sense"
-			(at 100.33 54.61 0)
+		(property "Value" "XIAO nRF52840 Sense"
+			(at 69.85 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1712,7 +1869,7 @@
 			)
 		)
 		(property "Footprint" "PulseWristTrack:XIAO_nRF52840"
-			(at 100.33 44.45 0)
+			(at 69.85 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1723,7 +1880,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 41.91 0)
+			(at 69.85 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1734,7 +1891,7 @@
 			)
 		)
 		(property "Description" "Seeed Studio XIAO nRF52840 Sense module (carrier symbol)"
-			(at 100.33 39.37 0)
+			(at 69.85 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1745,32 +1902,32 @@
 			)
 		)
 		(pin "3V3"
-			(uuid "e8cce0ef-21a0-427d-8db8-db8440bfbb94")
+			(uuid "4a314804-d990-4f32-9747-6bfccfdba273")
 		)
 		(pin "5V"
-			(uuid "d49ff7b7-634f-4ac0-918c-4e3d99b78c72")
+			(uuid "7c2734d7-a7db-4acd-90cc-446ad8339666")
 		)
 		(pin "BAT+"
-			(uuid "ffc8b2c2-fa9f-4a4e-8e3d-f9673ef0e89a")
+			(uuid "bcbac4b6-9dbd-4d11-ab73-99278cc640ae")
 		)
 		(pin "BAT-"
-			(uuid "42282952-6466-4b5b-ba3b-7a8afd089797")
+			(uuid "005d2516-9633-4c99-9683-98a215575edc")
 		)
 		(pin "D3"
-			(uuid "f60eff3f-4bb3-4e3a-9359-622d84ae252f")
+			(uuid "5a08b005-b9ab-4d3d-a53c-154d03dd452c")
 		)
 		(pin "D4"
-			(uuid "1f5f4f59-9876-4014-8e0c-ec17551194e6")
+			(uuid "ffbc3381-8068-45a5-b1fb-47c19acce28b")
 		)
 		(pin "D5"
-			(uuid "fa3cbda1-2b60-4e2e-b34c-6e69aabbe557")
+			(uuid "d41e613a-0171-4fd5-ab4a-f81a47ead138")
 		)
 		(pin "GND"
-			(uuid "123be266-b9a2-47d1-9649-e72945838b94")
+			(uuid "74f67228-6f6f-46c7-bad2-9e05d4803869")
 		)
 		(instances
 			(project "PulseWristTrack"
-				(path "/259a0946-9565-45ac-89f7-5fc0b32d0157"
+				(path "/2be9c7da-899d-4748-a50d-861159b715fe"
 					(reference "U1")
 					(unit 1)
 				)
@@ -1778,8 +1935,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 49.53 49.53 0)
+		(lib_id "Sensor:MAX30102")
+		(at 170.18 69.85 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1787,9 +1944,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "91bffb0e-26ad-49d3-bd6c-ec5799cf82b9")
-		(property "Reference" "J1"
-			(at 49.53 46.99 0)
+		(uuid "31ad27f1-72b6-47d7-8be0-1ec5bdac974d")
+		(property "Reference" "U2"
+			(at 170.18 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1798,8 +1955,8 @@
 				)
 			)
 		)
-		(property "Value" "BATT_JST_PH"
-			(at 49.53 52.07 0)
+		(property "Value" "MAX30102"
+			(at 170.18 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1808,8 +1965,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
-			(at 49.53 49.53 0)
+		(property "Footprint" "PulseWristTrack:MAX30102_OLGA14"
+			(at 170.18 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1819,8 +1976,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 49.53 49.53 0)
+		(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/MAX30102.pdf"
+			(at 170.18 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1830,8 +1987,8 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 49.53 49.53 0)
+		(property "Description" "Heart Rate Sensor, 14-OLGA"
+			(at 170.18 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1842,97 +1999,51 @@
 			)
 		)
 		(pin "1"
-			(uuid "00cf7395-f3dd-402c-9245-21ef8bf558bd")
+			(uuid "ed114e72-722c-4a53-a8c8-e59645be0613")
+		)
+		(pin "10"
+			(uuid "38474220-a489-471d-b8c8-03a7abe64460")
+		)
+		(pin "11"
+			(uuid "50ee9090-e583-4517-a46d-e414264a2dd0")
+		)
+		(pin "12"
+			(uuid "1af745d2-7957-448e-9cd5-14b148ff776a")
+		)
+		(pin "13"
+			(uuid "f373edb1-3960-4d79-a80c-88f53814a123")
+		)
+		(pin "14"
+			(uuid "f702fdf9-7555-4d46-9536-f6482b9088d4")
 		)
 		(pin "2"
-			(uuid "cacf379f-6f21-4ab3-ad0d-5dc1b033ec2a")
-		)
-		(instances
-			(project "PulseWristTrack"
-				(path "/259a0946-9565-45ac-89f7-5fc0b32d0157"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_SPDT")
-		(at 149.86 49.53 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f7152f90-5c2e-49cf-bc40-ea2f4386d9a5")
-		(property "Reference" "SW1"
-			(at 149.86 46.99 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "JS102011SAQN"
-			(at 149.86 52.07 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPDT_CK_JS102011SAQN"
-			(at 149.86 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 149.86 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Switch, single pole double throw"
-			(at 149.86 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f47c3bfb-128f-42ca-b28a-a662365d6acc")
-		)
-		(pin "2"
-			(uuid "c414991e-a803-4be5-a180-c73634a355b5")
+			(uuid "b16c3c78-b35a-495f-8457-e245ac584f73")
 		)
 		(pin "3"
-			(uuid "e6d3d0e8-9329-4939-9042-af1fa656ee1c")
+			(uuid "82c04c95-ff7e-46af-8d02-5b2b2fb1cff8")
+		)
+		(pin "4"
+			(uuid "39fa845f-c30e-436b-a765-2d4deb6d4c2b")
+		)
+		(pin "5"
+			(uuid "b7e71edc-5e87-4d7d-a666-374db261cb7d")
+		)
+		(pin "6"
+			(uuid "70364c0d-69af-4ef8-ab1a-062ad0fb8503")
+		)
+		(pin "7"
+			(uuid "685dd21d-cf83-4e31-9b03-9d7297c56d61")
+		)
+		(pin "8"
+			(uuid "4f5dbde0-4930-4704-bfe9-40b281708ee5")
+		)
+		(pin "9"
+			(uuid "1b69d7b2-70ab-4d34-95a9-757d6c1feed4")
 		)
 		(instances
 			(project "PulseWristTrack"
-				(path "/259a0946-9565-45ac-89f7-5fc0b32d0157"
-					(reference "SW1")
+				(path "/2be9c7da-899d-4748-a50d-861159b715fe"
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -1940,7 +2051,7 @@
 	)
 	(symbol
 		(lib_id "Regulator_Linear:AP2112K-1.8")
-		(at 49.53 95.25 0)
+		(at 170.18 129.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1948,9 +2059,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "78165170-a2f6-4ffa-99ec-0be6911d4151")
+		(uuid "8fa24750-c3bc-49d9-8126-e814969dc6ba")
 		(property "Reference" "U3"
-			(at 49.53 92.71 0)
+			(at 170.18 127.0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1961,7 +2072,7 @@
 			)
 		)
 		(property "Value" "AP2112K-1.8"
-			(at 49.53 97.79 0)
+			(at 170.18 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1972,7 +2083,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 49.53 103.505 0)
+			(at 170.18 137.795 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1983,7 +2094,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2112.pdf"
-			(at 49.53 97.79 0)
+			(at 170.18 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1994,7 +2105,7 @@
 			)
 		)
 		(property "Description" "600mA low dropout linear regulator, with enable pin, 2.5V-6V input voltage range, 1.8V fixed positive output, SOT-23-5"
-			(at 49.53 95.25 0)
+			(at 170.18 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2005,23 +2116,23 @@
 			)
 		)
 		(pin "1"
-			(uuid "d8d3f5a1-746d-49fc-982f-17b5533aa1d5")
+			(uuid "7aeabf38-7f57-441b-ade6-9d92d8ab58d3")
 		)
 		(pin "2"
-			(uuid "5b83cc38-24b5-4a63-8853-ed49f4a7b1f9")
+			(uuid "56fe73fd-d775-4105-83e3-bbdcc2743cd9")
 		)
 		(pin "3"
-			(uuid "70737ce4-f47e-4770-90da-3aabbe07adc8")
+			(uuid "e0bb5cc0-0f12-4dd4-b8ec-9013b3c034bc")
 		)
 		(pin "4"
-			(uuid "edcec9cc-ea03-483a-85aa-da251b924caf")
+			(uuid "13768428-f657-4af7-8cfd-61775d76859a")
 		)
 		(pin "5"
-			(uuid "f226a9ff-8107-448a-a3e9-5a8140c4b7f7")
+			(uuid "29788d76-9764-404b-8f2b-a93b1a0d7b36")
 		)
 		(instances
 			(project "PulseWristTrack"
-				(path "/259a0946-9565-45ac-89f7-5fc0b32d0157"
+				(path "/2be9c7da-899d-4748-a50d-861159b715fe"
 					(reference "U3")
 					(unit 1)
 				)
@@ -2029,123 +2140,8 @@
 		)
 	)
 	(symbol
-		(lib_id "PulseWristTrack:MAX30102")
-		(at 110.49 100.33 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "cea15c0f-5337-4c95-83b0-902d320e6d59")
-		(property "Reference" "U2"
-			(at 110.49 97.79 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MAX30102"
-			(at 110.49 102.87 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PulseWristTrack:MAX30102_OLGA14"
-			(at 110.49 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 110.49 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "MAX30102 optical pulse oximeter / HR sensor (OLGA-14), pins numbered to match footprint pads"
-			(at 110.49 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cfc8e185-d17d-4285-a664-f56e17d6104c")
-		)
-		(pin "10"
-			(uuid "126bdebf-2a83-439b-9397-aacfa571e7b1")
-		)
-		(pin "11"
-			(uuid "2b7ec6de-ae27-47aa-9806-956a612e48ef")
-		)
-		(pin "12"
-			(uuid "219f2ef4-8295-46a7-8fcd-94adee22e216")
-		)
-		(pin "13"
-			(uuid "42678537-9cae-4c03-9acc-35ca06748d98")
-		)
-		(pin "14"
-			(uuid "35b6505f-cca6-4760-89a3-76efa2c7361a")
-		)
-		(pin "2"
-			(uuid "7755e628-0b97-4a10-947e-02ec636970fe")
-		)
-		(pin "3"
-			(uuid "bea88dff-0def-4580-a18d-f9b7137ed095")
-		)
-		(pin "4"
-			(uuid "95aabca6-becf-4551-a55c-3186e971692f")
-		)
-		(pin "5"
-			(uuid "1ae0e778-6433-425d-adc6-f49b19a7976e")
-		)
-		(pin "6"
-			(uuid "f3921878-0891-46c0-9ff8-e389361a4358")
-		)
-		(pin "7"
-			(uuid "57f2ce06-f250-4d1b-9bb6-953110c32947")
-		)
-		(pin "8"
-			(uuid "f5c85bf9-e373-4a75-94d1-09bd779194d3")
-		)
-		(pin "9"
-			(uuid "9e6c0659-27ce-4202-b55e-8f64666d9c34")
-		)
-		(instances
-			(project "PulseWristTrack"
-				(path "/259a0946-9565-45ac-89f7-5fc0b32d0157"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Transistor_FET:BSS138")
-		(at 160.02 95.25 0)
+		(at 110.49 119.38 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2153,9 +2149,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "99c116cf-8d0c-4ce0-b6a9-404d011bc62f")
+		(uuid "6e7ec5c3-69db-432f-9427-810ee71f5664")
 		(property "Reference" "Q1"
-			(at 160.02 92.71 0)
+			(at 110.49 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2166,7 +2162,7 @@
 			)
 		)
 		(property "Value" "BSS138"
-			(at 160.02 97.79 0)
+			(at 110.49 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2177,7 +2173,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 165.1 93.345 0)
+			(at 115.57 117.475 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2190,7 +2186,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF"
-			(at 165.1 91.44 0)
+			(at 115.57 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2202,7 +2198,7 @@
 			)
 		)
 		(property "Description" "50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"
-			(at 160.02 95.25 0)
+			(at 110.49 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2213,17 +2209,17 @@
 			)
 		)
 		(pin "1"
-			(uuid "873d0a96-65f0-41f6-93d5-7bd750f75841")
+			(uuid "2cf1e55e-2175-454f-b85a-dcd768c647c2")
 		)
 		(pin "2"
-			(uuid "0224385f-54ad-4efb-8428-a3e556ff386a")
+			(uuid "73a47f4a-e2f5-4840-850f-95ae0ab35183")
 		)
 		(pin "3"
-			(uuid "c7cd96f0-0bc8-44d2-a16c-2f01d1beb1e7")
+			(uuid "2dad5122-9085-4ef1-835f-aa6426a19ec9")
 		)
 		(instances
 			(project "PulseWristTrack"
-				(path "/259a0946-9565-45ac-89f7-5fc0b32d0157"
+				(path "/2be9c7da-899d-4748-a50d-861159b715fe"
 					(reference "Q1")
 					(unit 1)
 				)
@@ -2232,7 +2228,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:BSS138")
-		(at 195.58 95.25 0)
+		(at 139.7 119.38 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2240,9 +2236,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "a20af4a3-7845-414c-84ab-f9768757e4f6")
+		(uuid "9062f872-732d-4f58-bd9f-a6a03b4d993b")
 		(property "Reference" "Q2"
-			(at 195.58 92.71 0)
+			(at 139.7 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2253,7 +2249,7 @@
 			)
 		)
 		(property "Value" "BSS138"
-			(at 195.58 97.79 0)
+			(at 139.7 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2264,7 +2260,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 200.66 93.345 0)
+			(at 144.78 117.475 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2277,7 +2273,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF"
-			(at 200.66 91.44 0)
+			(at 144.78 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2289,7 +2285,7 @@
 			)
 		)
 		(property "Description" "50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"
-			(at 195.58 95.25 0)
+			(at 139.7 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2300,17 +2296,17 @@
 			)
 		)
 		(pin "1"
-			(uuid "9d2fd8f0-83df-4ca9-a2b6-06c1dcb55912")
+			(uuid "d709cab0-b43e-4ea5-bc6f-005a3ed64881")
 		)
 		(pin "2"
-			(uuid "d514b45e-f29b-4157-a35c-bb307291aa54")
+			(uuid "c535c650-6320-4f70-ada4-c04411a144cd")
 		)
 		(pin "3"
-			(uuid "267ec562-b644-40b4-baf6-4ebbf4671b5f")
+			(uuid "290239e8-346d-4761-8a6e-9ce10c1d3186")
 		)
 		(instances
 			(project "PulseWristTrack"
-				(path "/259a0946-9565-45ac-89f7-5fc0b32d0157"
+				(path "/2be9c7da-899d-4748-a50d-861159b715fe"
 					(reference "Q2")
 					(unit 1)
 				)
@@ -2318,8 +2314,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 39.37 134.62 0)
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 30.48 129.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2327,31 +2323,29 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "2b23a3ea-6fba-4b84-a459-e1f8fbd42758")
-		(property "Reference" "C1"
-			(at 39.37 132.08 0)
+		(uuid "44d836d7-a13e-4778-8c34-08846ca2fef2")
+		(property "Reference" "J1"
+			(at 30.48 127.0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "10uF"
-			(at 39.37 137.16 0)
+		(property "Value" "LiPo"
+			(at 30.48 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 40.335 130.81 0)
+		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
+			(at 30.48 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2362,7 +2356,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 134.62 0)
+			(at 30.48 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2372,8 +2366,8 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 39.37 134.62 0)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 30.48 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2384,14 +2378,177 @@
 			)
 		)
 		(pin "1"
-			(uuid "ee193425-d31d-4a65-bf26-0ddae8cf0484")
+			(uuid "8b60708e-09ee-4761-8058-105acae02ac4")
 		)
 		(pin "2"
-			(uuid "f9cbeb74-5459-4fb6-a0f9-dedc08abbb6e")
+			(uuid "e09e9c1b-edf5-4787-82d1-e7527d1c424f")
 		)
 		(instances
 			(project "PulseWristTrack"
-				(path "/259a0946-9565-45ac-89f7-5fc0b32d0157"
+				(path "/2be9c7da-899d-4748-a50d-861159b715fe"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPDT")
+		(at 30.48 90.17 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d7d83ff8-14c8-44c4-9c63-073147d50fc3")
+		(property "Reference" "SW1"
+			(at 30.48 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "JS202011MQN"
+			(at 30.48 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPDT_PCM12"
+			(at 30.48 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Switch, single pole double throw"
+			(at 30.48 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fe96d9bf-8306-49ff-86fb-2cfb0098b21b")
+		)
+		(pin "2"
+			(uuid "eab8a196-a825-4c9d-b06f-db29d6605640")
+		)
+		(pin "3"
+			(uuid "7d9d2441-dd8c-418e-baba-cad69bf119c9")
+		)
+		(instances
+			(project "PulseWristTrack"
+				(path "/2be9c7da-899d-4748-a50d-861159b715fe"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 59.69 170.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "630532b3-4107-4975-aa11-1063d4dd8f9b")
+		(property "Reference" "C1"
+			(at 59.69 167.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 59.69 172.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 60.655 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 59.69 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "76a79d5f-b7bc-444f-846e-45c15e143c9c")
+		)
+		(pin "2"
+			(uuid "696f5fb0-8da3-4d65-90f5-4704283a6541")
+		)
+		(instances
+			(project "PulseWristTrack"
+				(path "/2be9c7da-899d-4748-a50d-861159b715fe"
 					(reference "C1")
 					(unit 1)
 				)
@@ -2400,7 +2557,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 64.77 134.62 0)
+		(at 90.17 170.18 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2408,9 +2565,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "47fa558c-6657-4309-9b5b-ad58e9f34bf8")
+		(uuid "4f82b4b5-fc1f-4cce-9cb8-aaf9213647f5")
 		(property "Reference" "C2"
-			(at 64.77 132.08 0)
+			(at 90.17 167.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2421,7 +2578,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 64.77 137.16 0)
+			(at 90.17 172.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2432,7 +2589,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 65.735 130.81 0)
+			(at 91.135 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2443,7 +2600,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 134.62 0)
+			(at 90.17 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2454,7 +2611,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 64.77 134.62 0)
+			(at 90.17 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2465,14 +2622,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "82db7438-a33f-4a3e-abfc-c55a1a930fbc")
+			(uuid "251d3af0-1ce6-411f-b566-a7749846a615")
 		)
 		(pin "2"
-			(uuid "f48246fa-b55e-4f94-a459-0737e08518eb")
+			(uuid "ee1627aa-fb72-45bf-a7e1-46b8e95598c8")
 		)
 		(instances
 			(project "PulseWristTrack"
-				(path "/259a0946-9565-45ac-89f7-5fc0b32d0157"
+				(path "/2be9c7da-899d-4748-a50d-861159b715fe"
 					(reference "C2")
 					(unit 1)
 				)
@@ -2481,7 +2638,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 90.17 134.62 0)
+		(at 119.38 170.18 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2489,9 +2646,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "5b26db99-9932-4194-ac3e-e92e90265322")
+		(uuid "1f2828df-0ef7-4ea5-bd9f-ef9b3eab175a")
 		(property "Reference" "C3"
-			(at 90.17 132.08 0)
+			(at 119.38 167.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2502,7 +2659,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 90.17 137.16 0)
+			(at 119.38 172.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2513,7 +2670,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 91.135 130.81 0)
+			(at 120.345 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2524,7 +2681,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 134.62 0)
+			(at 119.38 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2535,7 +2692,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 90.17 134.62 0)
+			(at 119.38 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2546,14 +2703,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "38c2ad85-b6be-49fd-b540-866bc2ec8f43")
+			(uuid "c5d6a980-237d-4ffa-86a4-2046ada0da73")
 		)
 		(pin "2"
-			(uuid "e23452d2-35d3-45b1-bfab-fefe4bd61804")
+			(uuid "fefc6ced-3bb4-4c53-a9bd-1a398177e638")
 		)
 		(instances
 			(project "PulseWristTrack"
-				(path "/259a0946-9565-45ac-89f7-5fc0b32d0157"
+				(path "/2be9c7da-899d-4748-a50d-861159b715fe"
 					(reference "C3")
 					(unit 1)
 				)
@@ -2562,7 +2719,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 115.57 134.62 0)
+		(at 149.86 170.18 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2570,9 +2727,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "47a21958-2b12-4d9b-b26c-5e854186edd4")
+		(uuid "1501e1af-5985-4e2f-990f-25d23bafc6ac")
 		(property "Reference" "C4"
-			(at 115.57 132.08 0)
+			(at 149.86 167.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2583,7 +2740,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 115.57 137.16 0)
+			(at 149.86 172.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2594,7 +2751,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 116.535 130.81 0)
+			(at 150.825 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2605,7 +2762,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 134.62 0)
+			(at 149.86 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2616,7 +2773,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 115.57 134.62 0)
+			(at 149.86 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2627,14 +2784,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "a870d54c-23ce-4694-8c09-f7f5d3c394a5")
+			(uuid "136b3f8f-959e-400c-a629-6fd32da0c5ab")
 		)
 		(pin "2"
-			(uuid "b593d99a-b0ca-4dc7-b73b-04cca70a8235")
+			(uuid "7cc50626-06c7-41d5-af11-270807e2ffae")
 		)
 		(instances
 			(project "PulseWristTrack"
-				(path "/259a0946-9565-45ac-89f7-5fc0b32d0157"
+				(path "/2be9c7da-899d-4748-a50d-861159b715fe"
 					(reference "C4")
 					(unit 1)
 				)
@@ -2643,7 +2800,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 139.7 134.62 0)
+		(at 190.5 100.33 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2651,9 +2808,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "e80e37c4-05bd-43ed-915b-74944885e681")
+		(uuid "38056b31-0d55-4815-a731-78bd1c29a74c")
 		(property "Reference" "R1"
-			(at 139.7 132.08 0)
+			(at 190.5 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2663,7 +2820,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 139.7 137.16 0)
+			(at 190.5 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2673,7 +2830,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 137.922 134.62 90)
+			(at 188.722 100.33 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2684,7 +2841,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 134.62 0)
+			(at 190.5 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2695,7 +2852,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 139.7 134.62 0)
+			(at 190.5 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2706,14 +2863,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "c0476daf-5c94-4c82-a867-da5244d85d26")
+			(uuid "ff5607d8-9315-4233-bcdd-d64fb7bca9cd")
 		)
 		(pin "2"
-			(uuid "db517b53-bda5-483c-80f2-227aa7f76918")
+			(uuid "7e3cc3e8-a281-4ed0-99e8-0732cb2f4e2a")
 		)
 		(instances
 			(project "PulseWristTrack"
-				(path "/259a0946-9565-45ac-89f7-5fc0b32d0157"
+				(path "/2be9c7da-899d-4748-a50d-861159b715fe"
 					(reference "R1")
 					(unit 1)
 				)
@@ -2722,7 +2879,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 160.02 134.62 0)
+		(at 204.47 100.33 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2730,9 +2887,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "f91148d7-90e3-4d37-aae4-f8c75ce240aa")
+		(uuid "ba472438-58ba-4043-b732-53f143cf2cce")
 		(property "Reference" "R2"
-			(at 160.02 132.08 0)
+			(at 204.47 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2742,7 +2899,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 160.02 137.16 0)
+			(at 204.47 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2752,7 +2909,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 158.242 134.62 90)
+			(at 202.692 100.33 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2763,7 +2920,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 134.62 0)
+			(at 204.47 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2774,7 +2931,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 160.02 134.62 0)
+			(at 204.47 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2785,14 +2942,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "68343064-9ccc-4137-8b8d-aaa1b1dd6629")
+			(uuid "b9e2eece-9e0a-4220-93a1-71cd32b3a3cb")
 		)
 		(pin "2"
-			(uuid "ca63d0a7-cd61-40b5-a110-467b64d226ee")
+			(uuid "3739c0f1-6839-4664-8945-56537c89b720")
 		)
 		(instances
 			(project "PulseWristTrack"
-				(path "/259a0946-9565-45ac-89f7-5fc0b32d0157"
+				(path "/2be9c7da-899d-4748-a50d-861159b715fe"
 					(reference "R2")
 					(unit 1)
 				)
@@ -2801,7 +2958,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 180.34 134.62 0)
+		(at 190.5 59.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2809,9 +2966,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "5bd12828-06e5-4852-9ed2-7e9900e515f1")
+		(uuid "84b096fb-52f0-48d0-95e7-f7fd427d8a69")
 		(property "Reference" "R3"
-			(at 180.34 132.08 0)
+			(at 190.5 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2821,7 +2978,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 180.34 137.16 0)
+			(at 190.5 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2831,7 +2988,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 178.562 134.62 90)
+			(at 188.722 59.69 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2842,7 +2999,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 134.62 0)
+			(at 190.5 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2853,7 +3010,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 180.34 134.62 0)
+			(at 190.5 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2864,14 +3021,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "798dd072-817a-4fe6-9b9e-741f8494d052")
+			(uuid "606bd11c-4955-414a-936d-25626640272b")
 		)
 		(pin "2"
-			(uuid "c1c0e4fd-ae03-4cc3-879c-0bf737910f1f")
+			(uuid "b9bf7bea-3edf-40bf-9fdd-07c007104c8c")
 		)
 		(instances
 			(project "PulseWristTrack"
-				(path "/259a0946-9565-45ac-89f7-5fc0b32d0157"
+				(path "/2be9c7da-899d-4748-a50d-861159b715fe"
 					(reference "R3")
 					(unit 1)
 				)
@@ -2880,7 +3037,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 199.39 134.62 0)
+		(at 204.47 59.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2888,9 +3045,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "d57abd47-d489-4c42-afa4-a3db68a46353")
+		(uuid "2e540729-b35d-4996-8061-fdb36b3b836f")
 		(property "Reference" "R4"
-			(at 199.39 132.08 0)
+			(at 204.47 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2900,7 +3057,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 199.39 137.16 0)
+			(at 204.47 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2910,7 +3067,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 197.612 134.62 90)
+			(at 202.692 59.69 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2921,7 +3078,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 199.39 134.62 0)
+			(at 204.47 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2932,7 +3089,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 199.39 134.62 0)
+			(at 204.47 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2943,14 +3100,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "146ad5f0-c2ac-4c58-96bf-31f244e52ecc")
+			(uuid "00f6f4cd-6545-4a59-9b83-7bfb78346f28")
 		)
 		(pin "2"
-			(uuid "adf474fd-7610-4e6d-8bc1-004351b7812d")
+			(uuid "761c07a7-052a-4365-b716-5733d5a5f738")
 		)
 		(instances
 			(project "PulseWristTrack"
-				(path "/259a0946-9565-45ac-89f7-5fc0b32d0157"
+				(path "/2be9c7da-899d-4748-a50d-861159b715fe"
 					(reference "R4")
 					(unit 1)
 				)
@@ -2959,7 +3116,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 219.71 134.62 0)
+		(at 219.71 119.38 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2967,9 +3124,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "4c1ee897-efb8-45fc-9cb2-e4ead278fd6d")
+		(uuid "c34b4222-7d92-4ca4-ac67-fbd54043b83f")
 		(property "Reference" "R5"
-			(at 219.71 132.08 0)
+			(at 219.71 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2979,7 +3136,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 219.71 137.16 0)
+			(at 219.71 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2989,7 +3146,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 217.932 134.62 90)
+			(at 217.932 119.38 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3000,7 +3157,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 219.71 134.62 0)
+			(at 219.71 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3011,7 +3168,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 219.71 134.62 0)
+			(at 219.71 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3022,14 +3179,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "36a3e007-e467-4619-92bc-3d354ae41d3f")
+			(uuid "f941c0d4-4854-4d20-91cb-d1a466ab15e3")
 		)
 		(pin "2"
-			(uuid "a2bdc756-1fd6-4725-8ca2-1b1973c022d1")
+			(uuid "be164007-60d2-4c61-b4d5-390256facb80")
 		)
 		(instances
 			(project "PulseWristTrack"
-				(path "/259a0946-9565-45ac-89f7-5fc0b32d0157"
+				(path "/2be9c7da-899d-4748-a50d-861159b715fe"
 					(reference "R5")
 					(unit 1)
 				)
@@ -3037,474 +3194,722 @@
 		)
 	)
 	(label "BAT_SW"
-		(at 90.17 44.45 0)
+		(at 59.69 64.77 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "68f9a0af-df51-4ffe-aba4-a0b13b9b6cbc")
+		(uuid "49348c4b-cf85-41f8-b6c9-14cbfe8199da")
 	)
 	(label "GND"
-		(at 90.17 46.99 0)
+		(at 59.69 67.30999999999999 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "e6c07c17-9569-483c-a19b-3fbc469c6130")
+		(uuid "24f9d1f8-a9a9-45e1-b60b-8dc19831c60b")
 	)
 	(label "+3V3"
-		(at 90.17 49.53 0)
+		(at 59.69 69.85 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "54d0d3b1-447a-453f-a88e-ab5aacb330ea")
+		(uuid "e7d5acd4-b3a4-4122-83a2-8c659d2d3671")
 	)
 	(label "GND"
-		(at 90.17 52.07 0)
+		(at 59.69 72.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "116e83b1-5b8b-4b61-8106-67937df25166")
+		(uuid "cb723fb5-cb0b-4518-8b63-730c4a8cef1b")
 	)
 	(label "INT"
-		(at 110.49 46.99 180)
+		(at 80.00999999999999 67.30999999999999 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "067a875f-1f28-4b49-837b-eab6d51f2b07")
+		(uuid "a2f9ff09-16cf-4eea-b8d1-325a3a1a6a3a")
 	)
 	(label "SDA_3V3"
-		(at 110.49 49.53 180)
+		(at 80.00999999999999 69.85 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "0b4b0dfb-f4c7-4ff0-af73-886040b25cb0")
+		(uuid "44032147-bafb-4962-802d-58b13b4f8c73")
 	)
 	(label "SCL_3V3"
-		(at 110.49 52.07 180)
+		(at 80.00999999999999 72.39 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "858a5824-7db1-4948-a6fb-aa84050fe728")
+		(uuid "5d95d0c5-6ee3-4246-bd4a-d7dfe2e882ca")
 	)
-	(label "BAT+"
-		(at 44.45 49.53 0)
+	(label "SCL_1V8"
+		(at 160.02 67.30999999999999 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "0a7fbbb3-a0d0-452c-a260-0bacb3ee980e")
+		(uuid "f828e10d-d37f-467f-b9e6-5b2880c06fb7")
+	)
+	(label "SDA_1V8"
+		(at 160.02 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ee04eb78-e413-45cd-bc26-45eebc118662")
 	)
 	(label "GND"
-		(at 44.45 52.07 0)
+		(at 167.64000000000001 82.55 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "94fb6863-114b-48b3-b4c1-e1a25b2e8a85")
+		(uuid "e07cdaa9-13f1-462d-8d6c-e96e07b8ac64")
+	)
+	(label "+3V3"
+		(at 170.18 57.14999999999999 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "44b990ca-e4f9-4196-a3b0-b58229d00864")
+	)
+	(label "+1V8"
+		(at 165.1 57.14999999999999 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7abfeafb-28f4-4449-8660-758b774f326f")
+	)
+	(label "GND"
+		(at 172.72 82.55 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "49d34944-a9a7-46d1-b07d-454407df5202")
+	)
+	(label "INT"
+		(at 180.34 69.85 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "966e01d6-4ae0-4cf7-bc07-b4e1aa10ac32")
+	)
+	(label "+3V3"
+		(at 162.56 126.99999999999999 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7c036917-62e0-4ea4-a39f-8c80112e732a")
+	)
+	(label "GND"
+		(at 170.18 137.16 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c24ff9ed-dcc4-408d-8063-8f9f881362f4")
+	)
+	(label "+3V3"
+		(at 162.56 129.54 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f4fc528e-d373-4856-a6ec-1d2fd75153d9")
+	)
+	(label "+1V8"
+		(at 177.8 126.99999999999999 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e2fc1c13-9745-494a-8904-7de70ee888bc")
+	)
+	(label "+1V8"
+		(at 105.41 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a01c9471-5865-4bfa-922d-ccd1b58613b0")
+	)
+	(label "SDA_1V8"
+		(at 113.03 124.46 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e2850eb7-90d3-4ad0-9cec-687cfcba5fa3")
+	)
+	(label "SDA_3V3"
+		(at 113.03 114.3 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "35214ddb-e322-4ad1-9ed2-1db846b1f964")
+	)
+	(label "+1V8"
+		(at 134.61999999999998 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "764f7dc9-1bf6-4ce8-b58d-d3d40068c874")
+	)
+	(label "SCL_1V8"
+		(at 142.23999999999998 124.46 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "637e6757-8b35-459a-b50e-10bf6beff86e")
+	)
+	(label "SCL_3V3"
+		(at 142.23999999999998 114.3 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "51f8c525-8293-4fae-a4ff-3f53f93f2416")
+	)
+	(label "BAT_RAW"
+		(at 25.4 129.54 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "93717fc9-8356-4eb8-9cf4-f21f8846fd48")
+	)
+	(label "GND"
+		(at 25.4 132.07999999999998 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5e584fef-90d6-4974-b33f-8d579775802d")
+	)
+	(label "BAT_RAW"
+		(at 35.56 87.63 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "28b76f84-9b7b-46e5-a9ee-42aa83bdf2b8")
 	)
 	(label "BAT_SW"
-		(at 154.94000000000003 46.99 180)
+		(at 25.4 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f4ae250f-2507-4e42-9c9e-45ffd820dee5")
+	)
+	(label "+3V3"
+		(at 59.69 166.37 270)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "832f8dbf-bf10-4e0a-bfaa-8956c3a925f6")
-	)
-	(label "BAT+"
-		(at 144.78 49.53 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ca3cf287-b625-4956-9896-410edb548882")
-	)
-	(label "+3V3"
-		(at 41.910000000000004 92.71 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "65d48092-63cd-4096-8f32-f4bb5c0ac154")
+		(uuid "210e2bec-a2b5-4888-a71d-c821db859950")
 	)
 	(label "GND"
-		(at 49.53 102.87 90)
+		(at 59.69 173.99 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "1be9580b-f2a4-4416-84ab-eff3a6424aa1")
-	)
-	(label "+3V3"
-		(at 41.910000000000004 95.25 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5659fe4d-b65d-464b-8d21-6a7f9b677a4e")
+		(uuid "7e15810c-5d89-438f-9bc3-b51c2837b1b0")
 	)
 	(label "+1V8"
-		(at 57.15 92.71 180)
+		(at 90.17 166.37 270)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "46beb998-9d64-4020-8c47-ed0d74825019")
+		(uuid "406a2103-a98f-4feb-b2c8-a8d2d3d9847d")
+	)
+	(label "GND"
+		(at 90.17 173.99 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "031d5689-e847-46f8-bb86-757b112741f0")
+	)
+	(label "+3V3"
+		(at 119.38 166.37 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e1569e0b-8894-440a-acf8-0ffeb7185161")
+	)
+	(label "GND"
+		(at 119.38 173.99 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f20f6685-b06f-4490-8ede-425010828b53")
+	)
+	(label "+1V8"
+		(at 149.86 166.37 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cfc739f4-494c-4db0-a1ef-7d8ee97a303e")
+	)
+	(label "GND"
+		(at 149.86 173.99 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "98d7a911-3f6f-4dea-ab2a-7a0088330167")
+	)
+	(label "SDA_1V8"
+		(at 190.5 96.52 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c26e8461-3a3a-4c2c-a8a7-d1fc9755aa3f")
+	)
+	(label "+1V8"
+		(at 190.5 104.14 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cd41dc96-ab31-4aad-85aa-2a1a6a61f287")
 	)
 	(label "SCL_1V8"
-		(at 102.86999999999999 95.25 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3fcec91a-2324-4b61-be15-d0871ab959b0")
-	)
-	(label "SDA_1V8"
-		(at 102.86999999999999 97.78999999999999 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d1596654-19be-4781-a96c-7873ef6be4ce")
-	)
-	(label "GND"
-		(at 102.86999999999999 100.33 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "167177d9-f15e-489d-967b-62b3a911c5f4")
-	)
-	(label "+3V3"
-		(at 102.86999999999999 105.41 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cd101ae7-fef7-4f33-9f73-7ec092994d95")
-	)
-	(label "+3V3"
-		(at 118.11 95.25 180)
+		(at 204.47 96.52 270)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "f4fd8946-b46d-413c-b3ec-1e09b62e77ee")
+		(uuid "af2d7552-44f8-4d97-8231-a48917493622")
 	)
 	(label "+1V8"
-		(at 118.11 102.87 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "48888432-9365-4747-9122-b57226aa4f37")
-	)
-	(label "GND"
-		(at 107.94999999999999 110.49 90)
+		(at 204.47 104.14 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "8ba7fbc7-208e-42f0-934d-507cdd36a2a7")
-	)
-	(label "INT"
-		(at 110.49 110.49 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f9cb99af-91cd-4fb2-a6e2-a0015f84f6c8")
-	)
-	(label "+1V8"
-		(at 154.94 95.25 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "42008f6a-1080-48c5-93b6-95519e12f046")
-	)
-	(label "SDA_1V8"
-		(at 162.56 100.33 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bc247eb6-f2a3-4647-a34e-ee740846b9a7")
+		(uuid "60147964-7c9d-47cc-b399-d1390c14dccf")
 	)
 	(label "SDA_3V3"
-		(at 162.56 90.17 270)
+		(at 190.5 55.879999999999995 270)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "9ca286a9-2777-4086-b1e7-40b74c3a03c4")
+		(uuid "39cb59d1-8695-433a-a62b-ac9dab80b3b5")
 	)
-	(label "+1V8"
-		(at 190.5 95.25 0)
+	(label "+3V3"
+		(at 190.5 63.5 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "ef503e7a-e53b-458e-bc93-9d505bff1974")
-	)
-	(label "SCL_1V8"
-		(at 198.12 100.33 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7dff1832-99ba-4224-9165-b4a1340015fa")
+		(uuid "75ed59f8-6cb4-482e-8b80-206f006b8266")
 	)
 	(label "SCL_3V3"
-		(at 198.12 90.17 270)
+		(at 204.47 55.879999999999995 270)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "93249407-63ec-4963-83ef-1d6f18ca8fa2")
+		(uuid "83d921e6-9e17-4e25-8bc9-c7ee88036f32")
 	)
 	(label "+3V3"
-		(at 39.37 130.81 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "80b42097-7e2e-4992-b775-17509dbc73f5")
-	)
-	(label "GND"
-		(at 39.37 138.43 90)
+		(at 204.47 63.5 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "59ec9c70-1486-4f3c-8dcd-42b5a3958537")
-	)
-	(label "+1V8"
-		(at 64.77 130.81 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8af10c1b-acff-465c-aad0-f0188c5c22ee")
-	)
-	(label "GND"
-		(at 64.77 138.43 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a5977db4-8886-4a71-ba6c-f779653cfd9e")
-	)
-	(label "+3V3"
-		(at 90.17 130.81 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6f1ed849-d99a-4120-8d67-76a570d169ae")
-	)
-	(label "GND"
-		(at 90.17 138.43 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "901cf49a-38a3-4aa3-aa0e-a3509c03c37b")
-	)
-	(label "+1V8"
-		(at 115.57 130.81 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "9f78a0c8-7340-4ab6-9454-26a2766ee3c7")
-	)
-	(label "GND"
-		(at 115.57 138.43 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e6ebd9a9-7344-4bcb-a033-792ee091d6c3")
-	)
-	(label "SDA_1V8"
-		(at 139.7 130.81 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "fe36da06-3399-4334-8653-928df8abe1f3")
-	)
-	(label "+1V8"
-		(at 139.7 138.43 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4ae61afb-279d-4997-89e4-8ad11f932de8")
-	)
-	(label "SCL_1V8"
-		(at 160.02 130.81 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "27a49b6b-53e8-40f3-bbc2-0977cf1e6254")
-	)
-	(label "+1V8"
-		(at 160.02 138.43 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "252f6f8c-641a-446f-9fe0-9e60d41d986d")
-	)
-	(label "SDA_3V3"
-		(at 180.34 130.81 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "52296887-955f-4f5e-bbe2-fce30a453eea")
-	)
-	(label "+3V3"
-		(at 180.34 138.43 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7c2b1a0f-312a-42b1-85cd-c00fcdf47961")
-	)
-	(label "SCL_3V3"
-		(at 199.39 130.81 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "14b1dd7e-fd4e-4cf5-984f-df3be0b34466")
-	)
-	(label "+3V3"
-		(at 199.39 138.43 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "03e18a42-2c88-4f1a-80d8-bf5f223157db")
+		(uuid "0d80dbd4-c527-4525-8227-34313e83bd4f")
 	)
 	(label "INT"
-		(at 219.71 130.81 270)
+		(at 219.71 115.57 270)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "ca11572e-4e01-49d8-9cbb-e373ca9358b1")
+		(uuid "5dd65cf3-4a95-4337-8e70-cbef86e2a950")
 	)
 	(label "+3V3"
-		(at 219.71 138.43 90)
+		(at 219.71 123.19 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "ac83b77a-59e9-4e7a-8c17-9b3941b44a1c")
+		(uuid "a644df43-5121-413f-85fa-5d4db5ce8039")
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 69.85 149.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1e4be901-8178-43fa-a3b5-488353188e45")
+		(property "Reference" "#FLG1"
+			(at 69.85 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 69.85 152.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 69.85 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d4db49a4-a1be-42b8-821b-a52d561a5a31")
+		)
+		(instances
+			(project "PulseWristTrack"
+				(path "/2be9c7da-899d-4748-a50d-861159b715fe"
+					(reference "#FLG1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 100.33 149.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "42a2b2bb-9e14-4f1a-b4c6-add9bdd455f5")
+		(property "Reference" "#FLG2"
+			(at 100.33 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 100.33 152.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 100.33 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 100.33 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9f3e1b04-8168-4375-88d5-b0c322f9803f")
+		)
+		(instances
+			(project "PulseWristTrack"
+				(path "/2be9c7da-899d-4748-a50d-861159b715fe"
+					(reference "#FLG2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 44.45 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "413b0119-8d09-484b-b824-71d9fded4e61")
+		(property "Reference" "#FLG3"
+			(at 44.45 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 44.45 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 44.45 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 44.45 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ac816b76-5603-4726-99d0-ec7de754649e")
+		)
+		(instances
+			(project "PulseWristTrack"
+				(path "/2be9c7da-899d-4748-a50d-861159b715fe"
+					(reference "#FLG3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "+3V3"
+		(at 69.85 149.86 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "43eb0246-f7aa-418d-9972-194f2a83f268")
+	)
+	(label "GND"
+		(at 100.33 149.86 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "caa6ef83-fbc8-4759-b1b1-32441a236037")
+	)
+	(label "BAT_SW"
+		(at 44.45 110.49 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6dc4c95e-bb94-4ea6-86c7-8f4c5298494d")
 	)
 	(sheet_instances
 		(path "/"
